@@ -1,0 +1,59 @@
+@import url("reset.css");
+
+div {
+	color: violet;
+}
+
+a {
+	color: blue;
+}
+
+h1 {
+	color: chocolate;
+}
+
+h2 {
+	color: tomato;
+}
+
+.content {
+	color: green;
+}
+
+#verstak {
+	color: purple;
+}
+
+div.content {
+	color: black;
+}
+
+.content.info {
+	color: silver;
+}
+
+.work,
+.working {
+	color: orange;
+}
+
+.list li {
+	/* color: green; */
+}
+
+.container .about {
+	color: red;
+}
+
+.info * {
+	/* color: brown; */
+}
+
+.info>h2 {
+	color: turquoise;
+}
+
+
+.method+p {
+	color: yellowgreen;
+}
