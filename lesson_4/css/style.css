@@ -1,0 +1,112 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+@font-face {
+	font-family: 'Spectral SC';
+	src: url("../fonts/SpectralSC-Light.woff2") format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Spectral SC';
+	src: url("../fonts/SpectralSC-Bold.woff2") format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Spectral SC';
+	src: url("../fonts/SpectralSC-Medium.woff2") format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Spectral SC';
+	src: url("../fonts/SpectralSC-Regular.woff2") format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+h1 {
+	font-family: "Rubik Mono One", serif;
+	font-weight: bold;
+	color: rgba(8, 148, 69, 0.50);
+	text-align: center;
+	font-size: 50px;
+}
+
+div {
+	font-family: "Spectral SC", sans-serif;
+	font-weight: 500;
+}
+
+h2 {
+	font-family: "Rubik Mono One", serif;
+	font-weight: bold;
+	color: rgb(71, 228, 35);
+	text-align: center;
+	font-size: 30px;
+	line-height: 5;
+}
+
+.about {
+	color: #208;
+	font-weight: bold;
+	font-style: italic;
+	text-align: right;
+
+}
+
+p,
+ul {
+	font-size: 20px;
+	text-align: justify;
+}
+
+.crossed {
+	text-decoration: line-through;
+	font-weight: 700;
+	text-align: left;
+}
+
+.name {
+	font-weight: 700;
+	color: rgba(56, 231, 17, 0.8);
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 1.5;
+	font-size: 23px;
+}
+
+.frequency {
+	font-weight: bold;
+	color: rgba(246, 22, 22, 0.8);
+	text-shadow: 4px 4px 5px silver;
+	text-transform: capitalize;
+	letter-spacing: 0.5px;
+}
+
+.link {
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: right;
+	text-decoration: overline;
+	font-style: oblique;
+}
+
+span {
+	word-spacing: 10px;
+	text-transform: lowercase;
+	font-size: 19px;
+	white-space: nowrap;
+	text-decoration: underline;
+	line-height: 4;
+}
