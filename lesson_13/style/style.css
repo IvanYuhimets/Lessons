@@ -1,0 +1,240 @@
+@import url("reset.css");
+
+
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+.wrapper__container {
+	width: 100%;
+	height: 970px;
+	position: relative;
+	background: #29bddb;
+}
+
+.animation {}
+
+.animation__road {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	background: url("../img/origin/roads_top.jpg");
+	width: 4500%;
+	height: 263px;
+	z-index: 2;
+	background-repeat: repeat-x;
+	animation: road 10s linear infinite;
+}
+
+@keyframes road {
+	100% {
+		transform: translatex(-5000px)
+	}
+
+}
+
+.animation__tree {
+	position: absolute;
+	display: block;
+	top: 25%;
+	left: 0;
+	background: url("../img/white-background.jpg");
+	width: 5000%;
+	height: 465px;
+	z-index: 2;
+	background-repeat: repeat-x;
+	animation: tree 15s linear infinite;
+}
+
+@keyframes tree {
+	100% {
+		transform: translatex(-5000px)
+	}
+
+}
+
+.animation__clouds {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	background: url("../img/clouds_top.webp");
+	width: 4000%;
+	height: 313px;
+	z-index: 2;
+	background-repeat: repeat-x;
+	animation: clouds 25s linear infinite;
+}
+
+@keyframes clouds {
+	0% {
+		transform: translatex(0px);
+	}
+
+	100% {
+		transform: translatex(-5000px);
+	}
+
+}
+
+.animation__car {
+	position: absolute;
+	top: 78%;
+	left: 35%;
+	transform: translate(-78%, -35%);
+	z-index: 5;
+	animation: car 7s linear infinite;
+}
+
+
+
+.animation__auto>img {
+	width: 100%;
+}
+
+
+@keyframes car {
+	0% {
+		transform: translatex(-990px);
+
+	}
+
+	20% {
+		transform: translatex(0px);
+
+	}
+
+	60% {
+		transform: translatex(5px);
+
+	}
+
+	70% {
+		transform: translatex(350px);
+
+	}
+
+	80% {
+		transform: translatex(240px);
+
+	}
+
+	85% {
+		transform: translatex(220px);
+
+	}
+
+	90% {
+		transform: translatex(1500px);
+
+	}
+
+	100% {
+		transform: translatex(2000px);
+
+	}
+
+
+}
+
+.animation__auto {
+	position: absolute;
+	width: 500px;
+	z-index: 2;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: auto 1s linear infinite;
+
+}
+
+@keyframes auto {
+	0% {
+		transform: translateY(0px);
+	}
+
+	20% {
+		transform: translateY(8px);
+	}
+
+	60% {
+		transform: translateY(5px);
+	}
+
+	80% {
+		transform: translateY(12px);
+	}
+
+	90% {
+		transform: translateY(9px);
+	}
+
+	100% {
+		transform: translateY(4px);
+	}
+}
+
+.animation__wheel-one img {
+	width: 100%;
+}
+
+
+.animation__wheel-one {
+
+	position: absolute;
+	z-index: 3;
+	top: 125px;
+	left: 345px;
+	animation: wheel-one 0.5s linear infinite;
+	transform-origin: center;
+	width: 70px;
+}
+
+
+
+@keyframes wheel-one {
+	0% {
+		transform: rotate(0deg);
+
+	}
+
+	100% {
+		transform: rotate(360deg);
+
+	}
+
+}
+
+.animation__wheel-two img {
+	width: 100%;
+}
+
+.animation__wheel-two {
+	position: absolute;
+	z-index: 6;
+	top: 125px;
+	left: 90px;
+	transform-origin: center;
+	width: 70px;
+	animation: wheel-two 0.5s linear infinite;
+}
+
+
+
+
+@keyframes wheel-two {
+	0% {
+		transform: rotate(0deg);
+
+
+	}
+
+	100% {
+		transform: rotate(360deg);
+
+	}
+
+
+}
