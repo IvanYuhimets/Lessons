@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My 16 Web</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+
+		</header>
+		<main class="container page">
+			<div class="page__title title__page">
+				<h1 class=" title__name">
+					Checkout
+				</h1>
+				<p class="title__text">
+					There are 3 products in your cart
+				</p>
+			</div>
+			<div class="page__subtitle subtitle__page">
+				<h3 class="subtitle__name">
+					Billing Details
+				</h3>
+			</div>
+			<form action="https://jsonplaceholder.typicode.com/posts" method="post"
+				class="container__forms forms__container">
+
+				<div class="forms__name name__forms">
+					<input required autocomplete="off" name="first-name" placeholder="First name*" value="" type="text"
+						class="name__item">
+				</div>
+
+				<div class="forms__name name__forms">
+					<input required autocomplete="off" name="last-name" placeholder="Last name*" value="" type="text"
+						class="name__item">
+				</div>
+
+				<div class="forms__name name__forms">
+					<input required autocomplete="off" name="address" placeholder="Address*" value="" type="text"
+						class="name__item">
+				</div>
+
+
+				<div class="forms__name name__forms">
+					<input required autocomplete="off" name="address-line-2" placeholder="Address line 2" value=""
+						type="text" class="name__item">
+				</div>
+				<div class="forms__country">
+					<!-- єлемент списка  -->
+					<select required name="list-country" class="forms__pick-country">
+						<option value="">Ukraine</option>
+						<option value="">Usa</option>
+						<option value="">Great Britain</option>
+						<option value="">Poland</option>
+						<option value="">Czechia</option>
+						<option value="">Lithuania</option>
+						<option value="">Sweden</option>
+					</select>
+				</div>
+
+				<div class="forms__name name__forms">
+					<input required autocomplete="off" name="city-town" placeholder="City/Town*" value="" type="text"
+						class="name__item">
+				</div>
+
+
+				<div class="forms__name name__forms">
+					<input required autocomplete="off" name="postcode-phone" placeholder="Postcode / ZIP*" value=""
+						type="text" class="name__item">
+				</div>
+
+
+				<div class="forms__name name__forms">
+					<input required autocomplete="off" name="phone" placeholder="Phone*" value="" type="tel"
+						class="name__item">
+				</div>
+
+				<div class="forms__name name__forms">
+					<input required autocomplete="off" name="postcode-phone-two-line" placeholder="Postcode / ZIP*" value=""
+						type="text" class="name__item">
+				</div>
+
+				<div class="forms__name name__forms">
+					<input required autocomplete="off" name="phone-two-line" placeholder="Phone*" value="" type="tel"
+						class="name__item">
+				</div>
+
+				<div class="forms__textarea">
+					<textarea autocomplete="off" name="additional information" placeholder="Additional information"
+						class="forms__area"></textarea>
+
+				</div>
+			</form>
+			<div class="container__checkbox">
+
+
+				<!-- доробити псевдоелементами вибір чекбокса -->
+
+				<div class="container__create-account">
+					<input id="account" checked class="container__checked" required type="checkbox">
+					<label class="container__label" for="account">Create Account</label>
+				</div>
+				<div class="container__different-address">
+					<input id="different-address" class="container__ship-to-new-adress" required type="checkbox">
+					<label class="container__label" for="different-address">Ship to a different address?</label>
+				</div>
+
+			</div>
+			<div class="discount__title">
+				<h4 class="discount__name">
+					Apply Coupon to get discount!
+				</h4>
+			</div>
+			<div class="container__discount discount__container">
+				<div class="discount__items">
+					<input autocomplete="off" name="coupon code" placeholder="Coupon code" value="" type="text"
+						class="discount__code">
+				</div>
+				<div class="discount__place-button">
+
+					<button type="submit" class="discount__button-submit">
+						Apply Code
+					</button>
+
+				</div>
+
+			</div>
+
+			<!-- form two -->
+			<div class="page-two__container">
+				<div class="page-two__title">
+					<h3 class="page-two__name">
+						Shipping Address
+					</h3>
+				</div>
+				<form action="https://jsonplaceholder.typicode.com/posts" method="post"
+					class="page-two__forms forms__page-two">
+
+					<div class="forms__line">
+						<label class="forms__label" for="email-01">Email Address <span
+								class="forms__red-star">*</span></label>
+						<input required class="forms__input" id="email-01" autocomplete="off"
+							placeholder="roni_cost@example.com" name="mail" type="email">
+					</div>
+
+					<div class="forms__line">
+						<label class="forms__label" for="password-01">Password</label>
+						<input class="forms__input" id="password-01" autocomplete="off" placeholder="******************"
+							name="pass" type="password">
+					</div>
+
+					<div class="forms__line forms__line-margin-bottom ">
+						<label class="forms__label" for="zip-code">Zip/Postal Code</label>
+						<input class="forms__input" id="zip-code" autocomplete="off" name="Zip/Postal/Code" placeholder=""
+							value="" type="text">
+					</div>
+
+
+					<div class="page-two__subtext">
+						You already have an account with us. Sign in or continue as guest.
+					</div>
+					<div class="page-two__place-button">
+
+						<button type="submit" class="page-two__button-login">
+							login
+						</button>
+
+						<button type="button" class="page-two__link-forgot-password">
+							Forgot Your Password?
+						</button>
+
+					</div>
+
+				</form>
+
+				<!-- form 3 -->
+
+				<form action="https://jsonplaceholder.typicode.com/posts" method="post"
+					class="page-two__forms forms__page-two">
+
+					<div class="forms__line">
+						<label class="forms__label" for="f-n-id">First Name <span class="forms__red-star">*</span></label>
+						<input required class="forms__input" id="f-n-id" autocomplete="off" name="First Name *" placeholder=""
+							value="" type="text">
+					</div>
+					<div class="forms__line">
+						<label class="forms__label" for="l-n-id">Last Name <span class="forms__red-star">*</span></label>
+						<input required class="forms__input" id="l-n-id" autocomplete="off" name="Last Name *" placeholder=""
+							value="" type="text">
+					</div>
+					<div class="forms__line">
+						<label class="forms__label" for="company-id">Company</label>
+						<input class="forms__input" id="company-id" autocomplete="off" name="Zip/Postal/Code" placeholder=""
+							value="" type="text">
+					</div>
+					<div class="forms__shipping">
+						<label class="forms__label" for="street-id">Street Address <span
+								class="forms__red-star">*</span></label>
+						<div class="forms__delivery">
+
+							<input required class="forms__input" id="street-id" autocomplete="off" name="Street Address *"
+								placeholder="" value="" type="text">
+
+							<input class="forms__input" autocomplete="off" name="Street Address *" placeholder="" value=""
+								type="text">
+
+
+							<input class="forms__input" autocomplete="off" name="Street Address *" placeholder="" value=""
+								type="text">
+
+						</div>
+					</div>
+					<div class="forms__line">
+						<label class="forms__label" for="country-id">Country <span class="forms__red-star">*</span></label>
+						<input required class="forms__input" id="country-id" autocomplete="off" name="Country  *"
+							placeholder="" value="" type="text">
+					</div>
+
+					<div class="forms__state-province">
+						<!-- єлемент списка  -->
+						<label class="forms__label" for="select-state-id">State/Province <span
+								class="forms__red-star">*</span></label>
+						<select required name="list-region-state" id="select-state-id" class="forms__select-state">
+							<option value="">Please select a region, state or province</option>
+							<option value="">Please select a region, state or province</option>
+							<option value="">Please select a region, state or province</option>
+						</select>
+					</div>
+					<div class="page-two__title-down">
+						<h3 class="page-two__name">
+							Shipping Methods
+						</h3>
+					</div>
+					<div class="page-two__radio-container">
+						<div class="page-two__block-down">
+							<input class="page-two__input-radio" id="price-5" checked name="price" value="" type="radio">
+							<label class="page-two__label" for="price-5">$5.00</label>
+						</div>
+						<div class="page-two__block-radio">
+							Fixed
+						</div>
+						<div class="page-two__block-radio">
+							Flat Rate
+						</div>
+					</div>
+					<div class="horizontal-line">
+
+					</div>
+					<div class="page-two__radio-container">
+						<div class="page-two__block-down">
+							<input class="page-two__input-radio" id="price-10" name="price" value="" type="radio">
+							<label class="page-two__label" for="price-10">$10.00</label>
+						</div>
+						<div class="page-two__block-radio">
+							Table Rate
+						</div>
+						<div class="page-two__block-radio">
+							Best Way
+						</div>
+
+					</div>
+					<div class="page-two__button-down">
+
+						<button type="submit" class="page-two__next">
+							next
+						</button>
+						<button type="button" class="page-two__back">
+							Back
+						</button>
+
+					</div>
+				</form>
+			</div>
+
+		</main>
+
+
+
+
+
+
+		<footer>
+
+		</footer>
+	</div>
+</body>
+
+</html>
